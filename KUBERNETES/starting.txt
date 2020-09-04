@@ -1,4 +1,4 @@
-1.To display a list of all the zones in the region to which Qwiklabs assigned you, enter this partial command gcloud compute zones list | grep followed by the region that Qwiklabs or your instructor assigned you to
+1.To display a list of all  command gcloud compute zones list | grep followed by the region that Qwiklabs or your instructor assigned you to
    
 
    gcloud compute zones list | grep us-central1
