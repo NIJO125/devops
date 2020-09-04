@@ -1,0 +1,37 @@
+1.To display a list of all the zones in the region to which Qwiklabs assigned you, enter this partial command gcloud compute zones list | grep followed by the region that Qwiklabs or your instructor assigned you to
+   
+
+   gcloud compute zones list | grep us-central1
+
+
+
+Choose a zone from that list other than the zone to which Qwiklabs assigned you. For example, if Qwiklabs assigned you to region us-central1 and zone us-central1-a you might choose zone us-central1-b.
+
+gcloud config set compute/zone us-central1-b
+
+To create a VM instance called my-vm-2 in that zone, execute this command:
+
+
+gcloud compute instances create "my-vm-2" \
+--machine-type "n1-standard-1" \
+--image-project "debian-cloud" \
+--image "debian-9-stretch-v20190213" \
+--subnet "default"
+
+
+Open SSH In Vm instances page
+
+To install nginx server
+
+sudo apt-get install nginx-light -y
+
+sudo nano /var/www/html/index.nginx-debian.html
+
+Hi from YOUR_NAME
+
+curl http://localhost/
+
+curl http://my-vm-1/
+
+
+
